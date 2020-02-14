@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v3.0.0-rc.0
+* @link https://coreui.io
+* Copyright (c) 2020 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Test ver 1</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      // Shared ID
+      gtag('config', 'UA-118965717-3');
+      // Bootstrap ID
+      gtag('config', 'UA-118965717-5');
+    </script>
+    <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+      <div class="c-sidebar-brand d-lg-down-none">
+        <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+          <use xlink:href="assets/brand/coreui.svg#full"></use>
+        </svg>
+        <svg class="c-sidebar-brand-minimized" width="46" height="46" alt="CoreUI Logo">
+          <use xlink:href="assets/brand/coreui.svg#signet"></use>
+        </svg>
+      </div>
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-speedometer"></use>
+            </svg> Home<span class="badge badge-info">Updated</span></a></li>
+        <li class="c-sidebar-nav-title">Public</li>
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="colors.html">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-drop1"></use>
+            </svg> Representative List</a></li>
+        
+        <li class="c-sidebar-nav-title">Components</li>
+            
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="typography.html">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-pencil"></use>
+            </svg> Detailed Page</a></li>
+
+        <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="">
+
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart-pie"></use>
+            </svg> User Page</a></li>
+        
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+            </svg> Notifications</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href=""><span class="c-sidebar-nav-icon"></span> Alerts</a></li>
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href=""><span class="c-sidebar-nav-icon"></span> Badge</a></li>
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href=""><span class="c-sidebar-nav-icon"></span> Modals</a></li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-divider"></li>
+        <li class="c-sidebar-nav-title">Extras</li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+            <svg class="c-sidebar-nav-icon">
+              <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-star"></use>
+            </svg> Pages</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="login.html" target="_top">
+                <svg class="c-sidebar-nav-icon">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                </svg> Login</a></li>
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="register.html" target="_top">
+                <svg class="c-sidebar-nav-icon">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                </svg> Register</a></li>
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="404.html" target="_top">
+                <svg class="c-sidebar-nav-icon">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
+                </svg> Error 404</a></li>
+            <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="500.html" target="_top">
+                <svg class="c-sidebar-nav-icon">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bug"></use>
+                </svg> Error 500</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+    </div>
+    <div class="c-wrapper">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <svg class="c-icon c-icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+          </svg>
+        </button><a class="c-header-brand d-lg-none" href="#">
+          <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg></a>
+        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <svg class="c-icon c-icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+          </svg>
+        </button>
+        <ul class="c-header-nav d-md-down-none">
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto mr-4">
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-list-rich"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="c-avatar"><img class="c-avatar-img" src="assets/img/avatars/6.jpg" alt="user@email.com"></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pt-0">
+              <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-bell"></use>
+                </svg> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                </svg> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+                </svg> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+                </svg> Comments<span class="badge badge-warning ml-auto">42</span></a>
+              <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                </svg> Profile</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
+                </svg> Settings</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-credit-card"></use>
+                </svg> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-file"></use>
+                </svg> Projects<span class="badge badge-primary ml-auto">42</span></a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
+                </svg> Lock Account</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                </svg> Logout</a>
+            </div>
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
+        <main class="c-main">
+          <div class="container-fluid">
+            <div class="fade-in">
+              <div class="card-columns cols-2">
+                <div class="card">
+                  <div class="card-header">John Smith
+                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="col-sm-6 col-md mb-sm-2 mb-0"><img src="data:image/jpeg;base64,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"></div>
+                    <div class="col-sm-6 col-md mb-sm-2 mb-0"><h6>John Smith</h6> </div>
+                  </div>
+                  <div class="col-sm-6 col-md mb-sm-2 mb-0"><h6>HALOOOOOOOO</h6> </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">Data 1
+                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="c-chart-wrapper">
+                      <canvas id="canvas-1"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">Data 2
+                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="c-chart-wrapper">
+                      <canvas id="canvas-2"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">Data 3
+                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="c-chart-wrapper">
+                      <canvas id="canvas-3"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">Data 4
+                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="c-chart-wrapper">
+                      <canvas id="canvas-4"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">Data 5
+                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="c-chart-wrapper">
+                      <canvas id="canvas-5"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">Data 6
+                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
+                  </div>
+                  <div class="card-body">
+                    <div class="c-chart-wrapper">
+                      <canvas id="canvas-6"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+    <!--[if IE]><!-->
+    <script src="node_modules/@coreui/icons/js/svgxuse.min.js"></script>
+    <!--<![endif]-->
+    <script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.bundle.js"></script>
+    <script src="js/charts.js"></script>
+  </body>
+</html>
